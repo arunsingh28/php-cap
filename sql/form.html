@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <form method="post" action="/cap777/sql/register.php">
+        <table>
+            <legend>Register</legend>
+            <tr>
+                <td>Name</td>
+                <td><input id="name" name="name" type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>email</td>
+                <td><input id="email" name="email" type="email" /></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input id="pwd" name="pwd" type="password" /></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td><input id="cpwd" type="password" /></td>
+            </tr>
+            <br>
+            <tr>
+                <td colspan="2"> <button style="width:100%" type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        const pwd = document.getElementById('pwd').value;
+        const cpwd = document.getElementById('cpwd').value;
+
+        function handleSubmit() {
+            if (pwd != cpwd) {
+                return false
+            } else return true
+        }
+    </script>
+</body>
+
+</html>

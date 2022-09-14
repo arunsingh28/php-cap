@@ -35,7 +35,6 @@
             } else {
                 echo "Division is: " . $no1 / $no2;
             }
-            echo $_SERVER['PHP_SELF'];
         }
     }
     ?>
