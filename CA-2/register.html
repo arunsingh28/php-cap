@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <form method="post" action="/cap777/CA-2/handleSave.php">
+        <table>
+            <legend>Register</legend>
+            <tr>
+                <td>Name</td>
+                <td><input id="name" name="name" type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>email</td>
+                <td><input id="email" name="email" type="email" /></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input id="pwd" name="pwd" type="password" /></td>
+            </tr>
+
+            <tr>
+                <td>Enter Mobile Number</td>
+                <td><input type="number" name="number" /></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Enter Address</td>
+                <td><textarea id="cpwd" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button style="width:100%" type="submit">Save</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    legend {
+        text-align: center;
+        font-size: 22px;
+        color: blue;
+        font-weight: 900;
+    }
+
+    form {
+        background-color: #eee;
+        width: 300px;
+        padding: 20px;
+    }
+</style>
+
+</html>
